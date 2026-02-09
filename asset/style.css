@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    font-family: 'VT323', monospace;
+    font-size: 1.2rem;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, nav a, .btn {
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+}
+
+#loading-screen {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background-color: #EF323D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    animation: fadeOutScreen 0.5s forwards 5s; 
+}
+
+.mojang-logo {
+    font-family: 'Press Start 2P', cursive;
+    color: #FFFFFF;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.progress-container {
+    width: 250px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #FFFFFF;
+    width: 0%;
+    animation: fillMojang 3.5s ease-in-out forwards;
+}
+
+@keyframes fillMojang {
+    0% { width: 0%; }
+    10% { width: 5%; }
+    40% { width: 60%; }
+    80% { width: 90%; }
+    100% { width: 100%; }
+}
+
+@keyframes fadeOutScreen {
+    0% { opacity: 1; visibility: visible; }
+    100% { opacity: 0; visibility: hidden; }
+}
+
+nav {
+    background-color: #484848;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 6px solid #212121;
+    image-rendering: pixelated;
+}
+
+nav a {
+    color: #AAAAAA;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 0.7rem;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #ffffff;
+    text-shadow: 2px 2px #388e3c;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                url('https://cdn.minecraft-france.fr/spai/q_lossless+ex_1+ret_img+to_webp/www.minecraft-france.fr/wp-content/uploads/2025/07/wallpaper_minecraft_buzzybees_2560x1440.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 8px solid #388e3c;
+}
+
+.hero h1 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-shadow: 4px 4px #000;
+    letter-spacing: 2px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: #484848;
+    padding: 20px;
+    border: 4px solid #000;
+    box-shadow: inset -4px -4px #212121, inset 4px 4px #8b8b8b;
+    margin-bottom: 25px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+input[type="radio"] { display: none; }
+
+.filter-bar { text-align: center; margin-bottom: 30px; }
+
+.btn {
+    display: inline-block; padding: 10px 15px; margin: 5px;
+    background: #484848; cursor: pointer; border: 4px solid #000;
+    box-shadow: inset -2px -2px #212121, inset 2px 2px #8b8b8b;
+    font-size: 0.5rem; color: white;
+}
+
+.b-boss { border-bottom: 6px solid #aa00aa; }
+.b-host { border-bottom: 6px solid #ff4444; }
+.b-pass { border-bottom: 6px solid #44ff44; }
+.b-aqua { border-bottom: 6px solid #4444ff; }
+
+#all:checked ~ .filter-bar label[for="all"],
+#boss-f:checked ~ .filter-bar label[for="boss-f"],
+#host-f:checked ~ .filter-bar label[for="host-f"],
+#pass-f:checked ~ .filter-bar label[for="pass-f"],
+#aqua-f:checked ~ .filter-bar label[for="aqua-f"] { 
+    background: #ffffff; color: black; 
+}
+
+.mob-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 15px; }
+.mob-grid .card { display: none; text-align: center; }
+
+#all:checked ~ .mob-grid .card,
+#boss-f:checked ~ .mob-grid .boss,
+#host-f:checked ~ .mob-grid .host,
+#pass-f:checked ~ .mob-grid .pass,
+#aqua-f:checked ~ .mob-grid .aqua { display: flex; flex-direction: column; align-items: center; }
+
+.card img { width: 64px; height: 64px; image-rendering: pixelated; margin-bottom: 10px; }
+
+.boss { border-top: 6px solid #aa00aa; }
+.host { border-top: 6px solid #ff4444; }
+.pass { border-top: 6px solid #44ff44; }
+.aqua { border-top: 6px solid #4444ff; }
+
+table {
+    width: 100%; border-collapse: collapse;
+    background-color: #313131; border: 4px solid #000;
+}
+th { background-color: #388e3c; border-bottom: 4px solid #2e7d32; padding: 15px; font-size: 0.6rem; }
+td { padding: 12px; border: 2px solid #000; }
+
+.gallery-item {
+    overflow: hidden; border: 4px solid #000;
+    box-shadow: 4px 4px 0px #212121; transition: transform 0.2s;
+    background: #484848; display: flex; flex-direction: column; text-decoration: none;
+}
+.gallery-item:hover { transform: scale(1.05); border-color: #388e3c; z-index: 10; }
+.gallery-item img { width: 100%; height: 200px; object-fit: cover; image-rendering: pixelated; }
+
+footer {
+    text-align: center; padding: 30px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.5rem; color: #777;
+}
+
+.welcome-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.welcome-box {
+    background-color: #333333;
+    padding: 25px;
+    border: 5px solid #000000;
+    color: #888888;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.mob-name {
+    margin-top: 15px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.7rem;
+    color: #ffffff;
+    text-shadow: 2px 2px #000;
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+
+.boss .mob-name { color: #d65cd6; }
+.host .mob-name { color: #ff6666; }
+.pass .mob-name { color: #66ff66; }
+.aqua .mob-name { color: #6666ff; }

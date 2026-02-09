@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Redstone Expert | Minecraft Universe</title>
+    <link rel="stylesheet" href="./asset/style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="survie.html">Survie</a>
+        <a href="mobs.html">Bestiaire</a>
+        <a href="redstone.html">Redstone</a>
+        <a href="galerie.html">Galerie</a>
+    </nav>
+
+    <header class="hero" style="border-bottom: 8px solid #ff0000;">
+        <h1 style="color: #ff4444; text-shadow: 4px 4px #4a0000;">LABORATOIRE REDSTONE</h1>
+        <p style="font-family: 'Press Start 2P'; font-size: 0.6rem; color: #ffaaaa; margin-top: 15px;">Automatisation avancée et circuits logiques.</p>
+    </header>
+
+    <div class="container">
+        
+        <h2>01. Sources d'Énergie</h2>
+        <div class="grid">
+            <div class="card" style="border-left: 8px solid #8b0000;">
+                <h3>Bloc de Redstone</h3>
+                <p>Source permanente. Ne peut pas être éteint. Pratique pour alimenter des rails ou déplacer de l'énergie via des pistons.</p>
+            </div>
+            <div class="card" style="border-left: 8px solid #8b0000;">
+                <h3>Torche</h3>
+                <p>La base de l'informatique MC. Elle inverse le signal : si le bloc en dessous est allumé, la torche s'éteint.</p>
+            </div>
+            <div class="card" style="border-left: 8px solid #8b0000;">
+                <h3>Observateur</h3>
+                <p>Détecte un changement d'état du bloc devant lui (mise à jour de bloc) et envoie une impulsion rapide de 1 tick.</p>
+            </div>
+        </div>
+
+        <h2 style="margin-top: 40px;">02. Manipulation de Signal</h2>
+        <div class="card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>COMPOSANT</th>
+                        <th>FONCTION PRINCIPALE</th>
+                        <th>DÉTAIL TECHNIQUE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Répéteur</td>
+                        <td>Délai / Amplification</td>
+                        <td>Bloque le signal dans un sens (diode). Délai de 1 à 4 ticks.</td>
+                    </tr>
+                    <tr>
+                        <td>Comparateur</td>
+                        <td>Test / Soustraction</td>
+                        <td>Compare deux signaux ou mesure le remplissage d'un inventaire.</td>
+                    </tr>
+                    <tr>
+                        <td>Poudre</td>
+                        <td>Transmission</td>
+                        <td>Perte de 1 de puissance par bloc. Max 15 blocs de distance.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 style="margin-top: 40px;">03. Actionneurs & Mécanique</h2>
+        <div class="grid">
+            <div class="card" style="border-bottom: 8px solid #388e3c;">
+                <h3>Piston Collant</h3>
+                <p>Pousse et tire des blocs. Essentiel pour les portes 2x2 et les machines volantes.</p>
+            </div>
+            <div class="card" style="border-bottom: 8px solid #777;">
+                <h3>Distributeur</h3>
+                <p>Utilise l'objet à l'intérieur (lance une flèche, pose de l'eau, équipe une armure).</p>
+            </div>
+            <div class="card" style="border-bottom: 8px solid #ffaa00;">
+                <h3>Lampe</h3>
+                <p>Source de lumière contrôlée. Parfait pour les indicateurs d'état dans vos usines.</p>
+            </div>
+        </div>
+
+        <h2 style="margin-top: 40px;">04. Concepts de Circuits</h2>
+        <div class="card">
+            <h3 style="color: #ff4444;">Le Tick Minecraft</h3>
+            <p>Le temps dans Minecraft est divisé en "Ticks". 1 seconde = 20 Ticks de jeu. <br>
+            Cependant, <strong>1 Tick Redstone = 2 Ticks de jeu (0.1 seconde)</strong>. C'est l'unité de mesure pour tous vos délais.</p>
+            <hr style="border: 1px solid #212121; margin: 15px 0;">
+            <h3 style="color: #ff4444;">Porte Logique "NON" (NOT Gate)</h3>
+            <p>Le circuit le plus simple : un bloc avec une torche posée dessus. Si vous alimentez le bloc, la torche s'éteint. C'est la base des systèmes complexes.</p>
+        </div>
+
+    <div class="card" style="border: 4px dashed #ffaa00; background-color: #3a3a3a; max-width: 600px; margin: 40px auto; padding: 15px;">
+    <h3 style="color: #ffaa00; font-size: 0.7rem; text-align: center; margin-bottom: 15px;">💡 LE SAVIEZ-VOUS ?</h3>
+    
+    <p style="font-size: 0.8rem; line-height: 1.4; margin-bottom: 10px;">
+        <span style="color: #ffaa00; font-family: 'Press Start 2P'; font-size: 0.5rem;">INFO_01:</span> 
+       À l'origine, la Redstone a été ajoutée pour être de la "poudre de engrenage". Les engrenages étaient prévus avant que Notch ne décide de créer la poussière que l'on connaît aujourd'hui !
+    </p>
+    
+    <div style="border-top: 2px solid #212121; margin: 10px 0;"></div>
+    
+    <p style="font-size: 0.8rem; line-height: 1.4;">
+        <span style="color: #ffaa00; font-family: 'Press Start 2P'; font-size: 0.5rem;">INFO_02:</span> 
+        Il est possible de créer un ordinateur fonctionnel dans Minecraft uniquement avec de la Redstone. Certains joueurs ont même réussi à faire tourner une version simplifiée de Minecraft... à l'intérieur de Minecraft !
+    </p>
+</div>
+    <footer>&copy; 2026 REDSTONE_ENGINEERING // TICK_RATE: 20Hz</footer>
+
+</body>
+</html>
