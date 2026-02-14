@@ -1,134 +1,274 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minecraft Server List - Retro Edition</title>
-    <link rel="stylesheet" href="./asset/style.css">
+    <link rel="stylesheet" href="./asset/style.css" />
     <div class="mob-grid server-grid"></div>
-</head>
-<body>
-
+  </head>
+  <body>
     <nav>
-        <a href="index.html">Accueil</a>
-        <a href="survie.html">Survie</a>
-        <a href="mobs.html">Bestiaire</a>
-        <a href="redstone.html">Redstone</a>
-        <a href="survie.html">Survie</a>
-        <a href="server.html">Serveurs</a>
+      <a href="index.html">Accueil</a>
+      <a href="survie.html">Survie</a>
+      <a href="mobs.html">Bestiaire</a>
+      <a href="redstone.html">Redstone</a>
+      <a href="survie.html">Survie</a>
+      <a href="server.html">Serveurs</a>
     </nav>
 
     <header class="hero">
-        <h1>SERVEURS 2026</h1>
+      <h1>SERVEURS 2026</h1>
     </header>
 
     <main class="container">
-        
-        <input type="radio" name="filter" id="all" checked>
-        <input type="radio" name="filter" id="boss-f"> <input type="radio" name="filter" id="host-f"> <input type="radio" name="filter" id="pass-f"> <input type="radio" name="filter" id="aqua-f"> <div class="filter-bar">
-            <label for="all" class="btn b-boss">TOUS</label>
-            <label for="boss-f" class="btn b-boss">MINI-JEUX</label>
-            <label for="host-f" class="btn b-host">PVP/ANARCHIE</label>
-            <label for="pass-f" class="btn b-pass">SURVIE</label>
-            <label for="aqua-f" class="btn b-aqua">RPG/MODDÉ</label>
+      <input type="radio" name="filter" id="all" checked />
+      <input type="radio" name="filter" id="boss-f" />
+      <input type="radio" name="filter" id="host-f" />
+      <input type="radio" name="filter" id="pass-f" />
+      <input type="radio" name="filter" id="aqua-f" />
+      <div class="filter-bar">
+        <label for="all" class="btn b-boss">TOUS</label>
+        <label for="boss-f" class="btn b-boss">MINI-JEUX</label>
+        <label for="host-f" class="btn b-host">PVP/ANARCHIE</label>
+        <label for="pass-f" class="btn b-pass">SURVIE</label>
+        <label for="aqua-f" class="btn b-aqua">RPG/MODDÉ</label>
+      </div>
+
+      <div class="mob-grid">
+        <div class="card boss">
+          <img src="https://mc-heads.net/head/MHF_Steve" alt="Icon" />
+          <div class="mob-name">HYPIXEL</div>
+          <p>Le roi mondial des mini-jeux.</p>
+          <div class="ip-address" data-hover="CLIC DROIT > COPIER">mc.hypixel.net</div>
         </div>
 
-        <div class="mob-grid">
-    <div class="card boss">
-        <img src="https://mc-heads.net/head/MHF_Steve" alt="Icon">
-        <div class="mob-name">HYPIXEL</div>
-        <p>Le roi mondial des mini-jeux.</p>
-        <div class="ip-address">mc.hypixel.net</div>
-    </div>
+        <div class="card boss">
+          <img src="https://mc-heads.net/head/MHF_Blaze" alt="Icon" />
+          <div class="mob-name">MINEMEN CLUB</div>
+          <p>Le meilleur serveur pour le PvP Practice.</p>
+            <div class="ip-address" data-hover="CLIC DROIT > COPIER">play.minemen.club</div>
+        </div>
 
-    <div class="card boss">
-        <img src="https://mc-heads.net/head/MHF_Blaze" alt="Icon">
-        <div class="mob-name">MINEMEN CLUB</div>
-        <p>Le meilleur serveur pour le PvP Practice.</p>
-        <div class="ip-address">minemen.club</div>
-    </div>
+        <div class="card pass">
+          <img src="https://mc-heads.net/head/MHF_GrassBlock" alt="Icon" />
+          <div class="mob-name">HYPING</div>
+          <p>N°1 Survie & OneBlock FR.</p>
+          <div class="ip-address" data-hover="CLIC DROIT > COPIER">play.hyping.fr</div>
+        </div>
 
-    <div class="card pass">
-        <img src="https://mc-heads.net/head/MHF_GrassBlock" alt="Icon">
-        <div class="mob-name">HYPING</div>
-        <p>N°1 Survie & OneBlock FR.</p>
-        <div class="ip-address">play.hyping.fr</div>
-    </div>
+        <div class="card pass">
+          <img src="https://mc-heads.net/head/MHF_OakLog" alt="Icon" />
+          <div class="mob-name">ORIGIN REALMS</div>
+          <p>Le Vanilla 2.0 avec items customs.</p>
+          <div class="ip-address" data-hover="CLIC DROIT > COPIER">play.originrealms.com</div>
+        </div>
 
-    <div class="card pass">
-        <img src="https://mc-heads.net/head/MHF_OakLog" alt="Icon">
-        <div class="mob-name">ORIGIN REALMS</div>
-        <p>Le Vanilla 2.0 avec items customs.</p>
-        <div class="ip-address">play.originrealms.com</div>
-    </div>
+        <div class="card pass">
+          <img src="https://mc-heads.net/head/MHF_Creeper" alt="Icon" />
+          <div class="mob-name">MANACUBE</div>
+          <p>Skyblock, Survival et Parkour de folie.</p>
+          <div class="ip-address" data-hover="CLIC DROIT > COPIER">play.manacube.com</div>
+        </div>
 
-    <div class="card pass">
-        <img src="https://mc-heads.net/head/MHF_Creeper" alt="Icon">
-        <div class="mob-name">MANACUBE</div>
-        <p>Skyblock, Survival et Parkour de folie.</p>
-        <div class="ip-address">play.manacube.com</div>
-    </div>
+        <div class="card host">
+          <img src="https://mc-heads.net/head/MHF_TNT" alt="Icon" />
+          <div class="mob-name">2B2T</div>
+          <p>L'anarchie pure sans règles.</p>
+          <div class="ip-address" data-hover="CLIC DROIT > COPIER">2b2t.org</div>
+        </div>
 
-    <div class="card host">
-        <img src="https://mc-heads.net/head/MHF_TNT" alt="Icon">
-        <div class="mob-name">2B2T</div>
-        <p>L'anarchie pure sans règles.</p>
-        <div class="ip-address">2b2t.org</div>
-    </div>
+        <div class="card host">
+          <img src="https://mc-heads.net/head/MHF_Enderman" alt="Icon" />
+          <div class="mob-name">NATIONSGLORY</div>
+          <p>PvP Faction sur carte du monde.</p>
+          <div class="ip-address" data-hover="CLIC DROIT > COPIER">play.nationsglory.fr</div>
+        </div>
 
-    <div class="card host">
-        <img src="https://mc-heads.net/head/MHF_Enderman" alt="Icon">
-        <div class="mob-name">NATIONSGLORY</div>
-        <p>PvP Faction sur carte du monde.</p>
-        <div class="ip-address">play.nationsglory.fr</div>
-    </div>
+        <div class="card host">
+          <img src="https://mc-heads.net/head/MHF_CaveSpider" alt="Icon" />
+          <div class="mob-name">PALADIUM</div>
+          <p>Le PvP Faction moddé n°1 en France.</p>
+          <div class="ip-address">paladium-pvp.fr</div>
+        </div>
 
-    <div class="card host">
-        <img src="https://mc-heads.net/head/MHF_CaveSpider" alt="Icon">
-        <div class="mob-name">PALADIUM</div>
-        <p>Le PvP Faction moddé n°1 en France.</p>
-        <div class="ip-address">paladium-pvp.fr</div>
-    </div>
+        <div class="card aqua">
+          <img src="https://mc-heads.net/head/MHF_Villager" alt="Icon" />
+          <div class="mob-name">WYNNCRAFT</div>
+          <p>Le plus grand RPG Minecraft.</p>
+          <div class="ip-address" data-hover="CLIC DROIT > COPIER">play.wynncraft.com</div>
+        </div>
 
-    <div class="card aqua">
-        <img src="https://mc-heads.net/head/MHF_Villager" alt="Icon">
-        <div class="mob-name">WYNNCRAFT</div>
-        <p>Le plus grand RPG Minecraft.</p>
-        <div class="ip-address">play.wynncraft.com</div>
-    </div>
+        <div class="card aqua">
+          <img src="https://mc-heads.net/head/MHF_Squid" alt="Icon" />
+          <div class="mob-name">MINEPIECE</div>
+          <p>L'univers de One Piece dans Minecraft.</p>
+          <div class="ip-address" data-hover="CLIC DROIT > COPIER">play.minepiece.fr</div>
+        </div>
 
-    <div class="card aqua">
-        <img src="https://mc-heads.net/head/MHF_Squid" alt="Icon">
-        <div class="mob-name">MINEPIECE</div>
-        <p>L'univers de One Piece dans Minecraft.</p>
-        <div class="ip-address">play.minepiece.fr</div>
-    </div>
+        <div class="card aqua">
+          <img src="https://mc-heads.net/head/MHF_Golem" alt="Icon" />
+          <div class="mob-name">BUILDER'S REFUGE</div>
+          <p>Le paradis des architectes et du build pro.</p>
+          <div class="ip-address" data-hover="CLIC DROIT > COPIER">buildersrefuge.com</div>
+        </div>
 
-    <div class="card aqua">
-        <img src="https://mc-heads.net/head/MHF_Golem" alt="Icon">
-        <div class="mob-name">BUILDER'S REFUGE</div>
-        <p>Le paradis des architectes et du build pro.</p>
-        <div class="ip-address">buildersrefuge.com</div>
-    </div>
+        <div class="card aqua">
+          <img src="https://mc-heads.net/head/MHF_Alex" alt="Icon" />
+          <div class="mob-name">PIRATEMC</div>
+          <p>Survie thématique piraterie et navires.</p>
+          <div class="ip-address" data-hover="CLIC DROIT > COPIER">play.piratemc.com</div>
+        </div>
 
-    <div class="card aqua">
-        <img src="https://mc-heads.net/head/MHF_Alex" alt="Icon">
-        <div class="mob-name">PIRATEMC</div>
-        <p>Survie thématique piraterie et navires.</p>
-        <div class="ip-address">play.piratemc.com</div>
-    </div>
+        <div class="card boss">
+          <img src="https://mc-heads.net/head/MHF_Slime" alt="Icon" />
+          <div class="mob-name">CUBECRAFT</div>
+          <p>Le paradis des jeux Bedrock et Java (SkyWars, EggWars).</p>
+          <div class="ip-address" data-hover="CLIC DROIT > COPIER">play.cubecraft.net</div>
+        </div>
+
+        <div class="card boss">
+          <img src="https://mc-heads.net/head/MHF_Ghast" alt="Icon" />
+          <div class="mob-name">BLOCKSM C</div>
+          <p>Serveur cracké très populaire pour le Bedwars et Skywars.</p>
+          <div class="ip-address" data-hover="CLIC DROIT > COPIER">blocksmc.com</div>
+        </div>
+
+        <div class="card pass">
+          <img src="https://mc-heads.net/head/MHF_Chicken" alt="Icon" />
+          <div class="mob-name">SKYBLOCK.NET</div>
+          <p>L'original, le serveur qui a inventé le mode Skyblock.</p>
+          <div class="ip-address" data-hover="CLIC DROIT > COPIER">skyblock.net</div>
+        </div>
+
+        <div class="card pass">
+          <img src="https://mc-heads.net/head/MHF_Sheep" alt="Icon" />
+          <div class="mob-name">ECOCITYCRAFT</div>
+          <p>Un serveur survie basé sur une économie ultra poussée.</p>
+          <div class="ip-address" data-hover="CLIC DROIT > COPIER">play.ecc.eco</div>
+        </div>
+
+        <div class="card pass">
+          <img src="https://mc-heads.net/head/MHF_Cow" alt="Icon" />
+          <div class="mob-name">PANDA-SURVIE</div>
+          <p>Une survie française chill avec une super communauté.</p>
+          <div class="ip-address" data-hover="CLIC DROIT > COPIER">play.panda-survie.fr</div>
+        </div>
+
+        <div class="card host">
+          <img src="https://mc-heads.net/head/MHF_PigZombie" alt="Icon" />
+          <div class="mob-name">VULCANYA</div>
+          <p>Un PvP-Faction français qui innove chaque saison.</p>
+          <div class="ip-address" data-hover="CLIC DROIT > COPIER">play.vulcanya.fr</div>
+        </div>
+
+        <div class="card host">
+          <img src="https://mc-heads.net/head/MHF_LavaSlime" alt="Icon" />
+          <div class="mob-name">PURPLETIP</div>
+          <p>Anarchie en 1.20+ avec une liberté totale de cheat.</p>
+          <div class="ip-address" data-hover="CLIC DROIT > COPIER">purpletip.net</div>
+        </div>
+
+        <div class="card host">
+          <img src="https://mc-heads.net/head/MHF_WitherSkeleton" alt="Icon" />
+          <div class="mob-name">HOPPER MC</div>
+          <p>Le meilleur serveur pour s'entraîner au PvP 1.9+.</p>
+          <div class="ip-address" data-hover="CLIC DROIT > COPIER">play.hoplite.gg</div>
+        </div>
+
+        <div class="card aqua">
+          <img src="https://mc-heads.net/head/MHF_Guardian" alt="Icon" />
+          <div class="mob-name">MONUMENTA</div>
+          <p>Un RPG "Complete the Monument" gigantesque et gratuit.</p>
+          <div class="ip-address" data-hover="CLIC DROIT > COPIER">play.serveradventure.com</div>
+        </div>
+
+        <div class="card aqua">
+          <img src="https://mc-heads.net/head/MHF_Endermite" alt="Icon" />
+          <div class="mob-name">MASSIVE CRAFT</div>
+          <p>Le serveur n°1 pour le Roleplay (Factions & Lore).</p>
+          <div class="ip-address" data-hover="CLIC DROIT > COPIER">massivecraft.com</div>
+        </div>
+
+        <div class="card aqua">
+          <img src="https://mc-heads.net/head/MHF_Ocelot" alt="Icon" />
+          <div class="mob-name">POKECENTRAL</div>
+          <p>Le meilleur serveur Pixelmon (nécessite le mod).</p>
+          <div class="ip-address" data-hover="CLIC DROIT > COPIER">pokecentral.org</div>
+        </div>
+
+        <div class="card boss">
+    <img src="https://mc-heads.net/head/MHF_Golem" alt="Icon">
+    <div class="mob-name">RIZEMC</div>
+    <p>Le plus gros serveur cracké français. Practice PvP et Bedwars ultra fluide.</p>
+    <div class="ip-address" data-hover="CLIC DROIT > COPIER">play.rizemc.fr</div>
 </div>
 
-        <div class="card welcome-box" style="margin-top: 50px;">
-            <h3>CONSEIL DE JOUEUR :</h3>
-            <p>Pour une expérience optimale en 2026, assurez-vous d'utiliser un client optimisé comme Lunar ou Prism avec les derniers shaders compatibles.</p>
-        </div>
+<div class="card boss">
+    <img src="https://mc-heads.net/head/MHF_Enderman" alt="Icon">
+    <div class="mob-name">HEROBRINE</div>
+    <p>Un classique mondial pour le Survival Games et le Skywars en crack.</p>
+    <div class="ip-address" data-hover="CLIC DROIT > COPIER">herobrine.org</div>
+</div>
 
+<div class="card boss">
+    <img src="https://mc-heads.net/head/MHF_Spider" alt="Icon">
+    <div class="mob-name">PICA-NETWORK</div>
+    <p>Référence internationale pour le Bedwars et Skyblock accessible à tous.</p>
+    <div class="ip-address" data-hover="CLIC DROIT > COPIER">play.pika-network.net</div>
+</div>
+
+<div class="card pass">
+    <img src="https://mc-heads.net/head/MHF_GrassBlock" alt="Icon">
+    <div class="mob-name">ZINC-CRAFT</div>
+    <p>Survie française survitaminée avec économie et claims, acceptant les cracks.</p>
+    <div class="ip-address" data-hover="CLIC DROIT > COPIER">play.zinccraft.fr</div>
+</div>
+
+<div class="card pass">
+    <img src="https://mc-heads.net/head/MHF_OakLog" alt="Icon">
+    <div class="mob-name">MBLOCKS</div>
+    <p>Serveur multi-modes très stable avec une grosse communauté crackée.</p>
+    <div class="ip-address" data-hover="CLIC DROIT > COPIER">play.mblocks.net</div>
+</div>
+
+<div class="card host">
+    <img src="https://mc-heads.net/head/MHF_LavaSlime" alt="Icon">
+    <div class="mob-name">JARTEX NETWORK</div>
+    <p>Gros serveur avec un PvP-Faction et un KitPvP très compétitif (Crack OK).</p>
+    <div class="ip-address" data-hover="CLIC DROIT > COPIER">play.jartexnetwork.com</div>
+</div>
+
+<div class="card host">
+    <img src="https://mc-heads.net/head/MHF_Blaze" alt="Icon">
+    <div class="mob-name">FUNCRAFT</div>
+    <p>Le légendaire serveur FR. Toujours debout pour le Rush et le Hikabrain.</p>
+    <div class="ip-address" data-hover="CLIC DROIT > COPIER">funcraft.net</div>
+</div>
+
+<div class="card aqua">
+    <img src="https://mc-heads.net/head/MHF_Villager" alt="Icon">
+    <div class="mob-name">UNIVERSOCRAFT</div>
+    <p>Serveur espagnol immense, accepte les cracks pour tous ses modes RPG.</p>
+    <div class="ip-address" data-hover="CLIC DROIT > COPIER">mc.universocraft.com</div>
+</div>
+
+      </div>
+
+      <div class="card welcome-box" style="margin-top: 50px">
+        <h3>CONSEIL DE JOUEUR :</h3>
+        <p>
+          Pour une expérience optimale en 2026, assurez-vous d'utiliser un
+          client optimisé comme Lunar ou Prism avec les derniers shaders
+          compatibles.
+        </p>
+      </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 MINECRAFT SERVER LIST - NOT AN OFFICIAL MINECRAFT PRODUCT.</p>
+      <p>
+        &copy; 2026 MINECRAFT SERVER LIST - NOT AN OFFICIAL MINECRAFT PRODUCT.
+      </p>
     </footer>
-
-</body>
+  </body>
 </html>

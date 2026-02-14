@@ -265,3 +265,35 @@ footer {
     from { box-shadow: 0 0 2px #55ff55; }
     to { box-shadow: 0 0 10px #55ff55; }
 }
+
+.server-grid .ip-address {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.server-grid .ip-address::after {
+    content: attr(data-hover);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #55ff55;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.5rem;
+    transform: translateY(100%);
+    transition: transform 0.2s ease-in-out;
+}
+
+.server-grid .card:hover .ip-address::after {
+    transform: translateY(0);
+}
+
+.server-grid .ip-address:hover {
+    cursor: cell;
+}
