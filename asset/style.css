@@ -222,8 +222,8 @@ footer {
 .pass .mob-name { color: #66ff66; }
 .aqua .mob-name { color: #6666ff; }
 
-.server-grid {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+.mob-grid.server-grid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
 }
 
 .ip-address {
@@ -231,12 +231,13 @@ footer {
     color: #55ff55;
     padding: 8px;
     font-family: monospace;
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-top: 15px;
     border: 2px dashed #55ff55;
     width: 100%;
+    word-break: break-all;
+    box-sizing: border-box;
 }
-
 .server-grid .card {
     transition: transform 0.1s, border-color 0.2s;
     justify-content: space-between;
