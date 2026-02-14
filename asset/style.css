@@ -221,3 +221,46 @@ footer {
 .host .mob-name { color: #ff6666; }
 .pass .mob-name { color: #66ff66; }
 .aqua .mob-name { color: #6666ff; }
+
+.server-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.ip-address {
+    background: #000;
+    color: #55ff55;
+    padding: 8px;
+    font-family: monospace;
+    font-size: 1rem;
+    margin-top: 15px;
+    border: 2px dashed #55ff55;
+    width: 100%;
+}
+
+.server-grid .card {
+    transition: transform 0.1s, border-color 0.2s;
+    justify-content: space-between;
+}
+
+.server-grid .card:hover {
+    animation: pixelShake 0.2s infinite;
+    border-color: #ffffff;
+    z-index: 5;
+}
+
+@keyframes pixelShake {
+    0% { transform: translate(2px, 2px); }
+    25% { transform: translate(-2px, -2px); }
+    50% { transform: translate(-2px, 2px); }
+    75% { transform: translate(2px, -2px); }
+    100% { transform: translate(2px, 2px); }
+}
+
+.server-grid .card:hover .ip-address {
+    animation: ipGlow 0.5s infinite alternate;
+}
+
+@keyframes ipGlow {
+    from { box-shadow: 0 0 2px #55ff55; }
+    to { box-shadow: 0 0 10px #55ff55; }
+}
