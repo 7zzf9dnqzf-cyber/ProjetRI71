@@ -165,7 +165,13 @@ input[type="radio"] { display: none; }
 #pass-f:checked ~ .mob-grid .pass,
 #aqua-f:checked ~ .mob-grid .aqua { display: flex; flex-direction: column; align-items: center; }
 
-.card img { width: 64px; height: 64px; image-rendering: pixelated; margin-bottom: 10px; }
+.card img { 
+    width: 80px;
+    height: 80px;
+    image-rendering: pixelated; 
+    margin-bottom: 10px;
+    object-fit: contain;
+}
 
 .boss { border-top: 6px solid #aa00aa; }
 .host { border-top: 6px solid #ff4444; }
@@ -185,7 +191,12 @@ td { padding: 12px; border: 2px solid #000; }
     background: #484848; display: flex; flex-direction: column; text-decoration: none;
 }
 .gallery-item:hover { transform: scale(1.05); border-color: #388e3c; z-index: 10; }
-.gallery-item img { width: 100%; height: 200px; object-fit: cover; image-rendering: pixelated; }
+.gallery-item img { 
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover;
+    image-rendering: pixelated; 
+}
 
 footer {
     text-align: center; padding: 30px;
@@ -222,8 +233,10 @@ footer {
 .pass .mob-name { color: #66ff66; }
 .aqua .mob-name { color: #6666ff; }
 
-.mob-grid.server-grid {
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+.mob-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 20px;
 }
 
 .ip-address {
@@ -296,4 +309,18 @@ footer {
 
 .server-grid .ip-address:hover {
     cursor: cell;
+}
+.card p {
+    font-family: 'VT323', monospace;
+    font-size: 1.4rem;
+    color: #AAAAAA;
+    margin: 0;
+}
+
+.container h1 + p {
+    color: skyblue;
+    font-family: 'VT323', monospace;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
 }
