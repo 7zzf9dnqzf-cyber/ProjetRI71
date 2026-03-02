@@ -331,15 +331,17 @@ footer {
     margin: 0;
 }
 
-.card a {
+a {
     color: #ffffff !important;
     text-decoration: none !important;
-    transition: all 0.2s ease-in-out;
-    display: inline-block;
 }
 
-.card a:hover {
+a:hover {
     color: #55ff55 !important;
-    transform: scale(1.05);
     text-shadow: 2px 2px #003300;
+}
+
+.card a {
+    display: inline-block;
+    transition: all 0.2s ease;
 }
