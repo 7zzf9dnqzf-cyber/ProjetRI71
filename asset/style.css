@@ -323,9 +323,23 @@ footer {
 .server-grid .ip-address:hover {
     cursor: cell;
 }
+
 .card p {
     font-family: 'VT323', monospace;
     font-size: 1.4rem;
     color: #AAAAAA;
     margin: 0;
+}
+
+.card a {
+    color: #ffffff !important;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.6rem;
+}
+
+.card a:hover {
+    color: #55ff55 !important;
+    text-shadow: 2px 2px #003300;
 }
