@@ -333,13 +333,13 @@ footer {
 
 .card a {
     color: #ffffff !important;
-    text-decoration: none;
-    transition: all 0.2s ease;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 0.6rem;
+    text-decoration: none !important;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
 }
 
 .card a:hover {
     color: #55ff55 !important;
+    transform: scale(1.05);
     text-shadow: 2px 2px #003300;
 }
